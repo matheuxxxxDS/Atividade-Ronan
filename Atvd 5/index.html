@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada em Tabela</title>
+    <style>
+        table { border-collapse: collapse; width: 50%; margin-top: 20px; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+    <table id="resultado"></table>
+
+    <script>
+        function mostrarTabuada() {
+            const numero = document.getElementById('numero').value;
+            const resultadoTable = document.getElementById('resultado');
+            resultadoTable.innerHTML = '<tr><th>Multiplicador</th><th>Resultado</th></tr>'; // Cabeçalho da tabela
+
+            for (let i = 1; i <= 10; i++) {
+                const resultado = i * numero;
+                resultadoTable.innerHTML += `<tr><td>${i} * ${numero}</td><td>${resultado}</td></tr>`;
+            }
+        }
+    </script>
+</body>
+</html>
