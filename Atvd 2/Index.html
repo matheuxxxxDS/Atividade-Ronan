@@ -2,23 +2,29 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cores</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
-    <p>Escolha uma cor:</p>
-    <button onclick="document.body.style.backgroundColor='red';">Vermelho</button>
-    <button onclick="document.body.style.backgroundColor='blue';">Azul</button>
-    <button onclick="document.body.style.backgroundColor='green';">Verde</button>
-    <button onclick="document.body.style.backgroundColor='yellow';">Amarelo</button>
-    <button onclick="document.body.style.backgroundColor='purple';">Roxo</button>
-    
-    <button onclick="document.body.style.color='orange';">Laranja</button>
-    <button onclick="document.body.style.color='pink';">Rosa</button>
-    <button onclick="document.body.style.color='brown';">Marrom</button>
-    <button onclick="document.body.style.color='black';">Preto</button>
-    <button onclick="document.body.style.color='white';">Branco</button>
-    
-    <p> A cor é vida!</p>
+<body class="text-center p-5">
+    <h2>Escolha uma cor:</h2>
+    <div class="btn-group-vertical" role="group">
+        <button class="btn btn-danger" onclick="document.body.style.backgroundColor='red';">Vermelho</button>
+        <button class="btn btn-primary" onclick="document.body.style.backgroundColor='blue';">Azul</button>
+        <button class="btn btn-success" onclick="document.body.style.backgroundColor='green';">Verde</button>
+        <button class="btn btn-warning" onclick="document.body.style.backgroundColor='yellow';">Amarelo</button>
+        <button class="btn btn-secondary" onclick="document.body.style.backgroundColor='purple';">Roxo</button>
+        
+        <button class="btn btn-outline-warning" onclick="document.body.style.color='orange';">Laranja</button>
+        <button class="btn btn-outline-danger" onclick="document.body.style.color='pink';">Rosa</button>
+        <button class="btn btn-outline-dark" onclick="document.body.style.color='brown';">Marrom</button>
+        <button class="btn btn-outline-dark" onclick="document.body.style.color='black';">Preto</button>
+        <button class="btn btn-outline-light" onclick="document.body.style.color='white';">Branco</button>
+    </div>
+    <p class="mt-4">A cor é vida!</p>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
